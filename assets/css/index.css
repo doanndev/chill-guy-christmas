@@ -7,6 +7,7 @@
 
 body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
   margin: 0;
   font-family: "Cute Dino", sans-serif;
   background-image: url('../imgs/BG.png');
