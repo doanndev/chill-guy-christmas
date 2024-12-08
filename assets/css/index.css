@@ -441,7 +441,7 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: start;
   padding: 20px;
   box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
@@ -492,7 +492,7 @@ body {
   height: 24px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1025px) {
   /* Hide default navbar links */
   .list-option {
     display: none;
