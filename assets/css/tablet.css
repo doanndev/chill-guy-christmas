@@ -1,0 +1,66 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .main-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 24px;
+    }
+
+    .navbar .list-option {
+        flex-direction: row;
+        /* gap: 20px; */
+    }
+
+    .section_1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section_1-chillguy img {
+        width: 80%;
+    }
+
+    .section_1-form {
+        width: 90%;
+    }
+
+    .section_3 {
+        flex-direction: column;
+        padding: 0 20%;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 10%;
+    }
+
+    .section-4_first {
+        flex-direction: column;
+    }
+
+    .section-4_first_left,
+    .section-4_first_right {
+        width: 100%;
+    }
+
+    .section_5 {
+        margin-bottom: 5%;
+    }
+
+    .section_5 .content {
+        text-align: justify;
+        width: 80%;
+    }
+
+    .footer-image {
+        display: none;
+    }
+
+    /* .control-btn {
+        display: none;
+    }
+
+    #icon-sound {
+        display: none;
+    } */
+}

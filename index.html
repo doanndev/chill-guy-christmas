@@ -3,21 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/imgs/logo-transparent.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="assets/imgs/logo-transparent.png">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/decor.css">
     <link rel="stylesheet" href="assets/css/snowflake.css">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/tablet.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
     <title>Chill Guy Chirstmast</title>
   </head>
   <body>
     <div id="snow-container"></div>
     <div class="main-container">
       <img class="light-bubl" src="assets/imgs/light_bulb.png" alt>
-      <div class="navbar">
+      <div class="menu-icon" id="menu-icon">
+        <img src="assets/svgs/menu-hamburger-nav-svgrepo-com.svg" alt="Menu">
+      </div>
+      <div id="navbar" class="navbar">
         <div class="logo"><img src="assets/imgs/logo-transparent.png" alt></div>
         <div class="list-option">
           <a href="#section_2"><h5>About</h5></a>
@@ -26,14 +28,21 @@
           <a href="#section_5"><h5>Join us</h5></a>
         </div>
       </div>
+      <div class="sidebar" id="sidebar">
+        <a href="#section_2">About</a>
+        <a href="#section_3">How to buy</a>
+        <a href="#section-4_first">Pre-sale</a>
+        <a href="#section_5">Join us</a>
+      </div>
+      <div class="overlay" id="overlay"></div>
       <div class="section_1">
-        <p class="decor-text">CHILL GUY</p>
+        <p class="decor-text">CHILL GUY CHRISTMAS</p>
         <div class="section_1-chillguy left hidden">
           <img src="assets/imgs/chill_guy_xmas-removebg-preview.png" alt>
-          <h1>Xmasguy</h1>
+          <h1>Chill Guy Christmas</h1>
         </div>
 
-        <div class="section_1-form right hidden">
+        <!-- <div class="section_1-form right hidden">
           <div class="title"><img src="assets/imgs/logo-transparent.png"
               alt></div>
           <div class="countdown">
@@ -74,12 +83,12 @@
           <input name="BEP20-address" type="text">
           <button class="connect-wallet">Get Referral Link</button>
           <p style="color: #888;">Enjoy 10% of purchased tokens</p>
-        </div>
+        </div> -->
         <img class="form-tree" src="assets/imgs/tree.png">
       </div>
       <div id="section_2" class="section_2">
         <div class="section_2-left left hidden">
-          <h1 class="title">About $xmasguy</h1>
+          <h1 class="title">About Chill Guy Christmas</h1>
           <p>Christmas Chill Guy is a meme character that's all about being
             super relaxed and not caring much about anything, and only waiting
             for Christmas.</p>
@@ -100,7 +109,7 @@
             EXTENSION BY GOING TO PHANTOM.
           </p>
         </div>
-        <div class="card" id="card2">
+        <div class="card left hidden" id="card2">
           <h3>GET SOME SOL</h3>
           <p>HAVE SOL IN YOUR WALLET TO BUY $XMASGUY. IF YOU DON'T HAVE ANY SOL,
             YOU CAN BUY DIRECTLY ON PHANTOM, TRANSFER FROM ANOTHER WALLET, OR
@@ -120,7 +129,7 @@
         <div class="section-4_first_left left hidden">
           <img src="assets/imgs/chill_guy_drink_coffe.png">
         </div>
-        <div class="section-4_first_right right hidden">
+        <!-- <div class="section-4_first_right right hidden">
           <h1 class="title">Xmasguy Pre-sale</h1>
           <p>Get your tokens now and before launching on dexscreener. This won´t
             be a regret but life changing opportunity.
@@ -133,23 +142,25 @@
           <p>We are sold out! Check our telegram or X for specific info about
             drop date and time!
           </p>
-        </div>
+        </div> -->
       </div>
 
       <div id="section_5" class="section_5 left hidden">
-        <h1 class="title">Join xmasguy community</h1>
+        <h1 class="title">Join Chill Guy Christmas community</h1>
         <div class="content">
-          <p>Join the XMASGUY community! Stay updated on social media, vibe with
+          <p>Join the Chill Guy Christmas community! Stay updated on social
+            media, vibe with
             us on Telegram, and explore exclusive chats on Discord. Share the
             chill vibes and be part of our growing family!
           </p>
         </div>
         <div class="contact">
-          <a href="#"><img class="link-icon" src="assets/svgs/twitter-154-svgrepo-com.svg"></a>
-          <a href="#"><img class="link-icon" src="assets/svgs/telegram-svgrepo-com.svg"></a>
+          <a href="#"><img class="link-icon"
+              src="assets/svgs/twitter-154-svgrepo-com.svg"></a>
+          <a href="#"><img class="link-icon"
+              src="assets/svgs/telegram-svgrepo-com.svg"></a>
         </div>
       </div>
-
 
       <div id="control-btn">
         <img id="icon-sound" src="assets/svgs/sound-volume-2-svgrepo-com.svg">
@@ -165,8 +176,8 @@
     <script src="assets/js/stickybar.js"></script>
     <script src="assets/js/snowflake.js"></script>
     <script src="assets/js/card-hover.js"></script>
-    <script src="assets/js/countdown.js"></script>
-    <script src="assets/js/chat-bubble.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+    <!-- <script src="assets/js/countdown.js"></script> -->
     <script src="assets/js/music_control.js"></script>
   </body>
 </html>

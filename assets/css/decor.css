@@ -68,3 +68,9 @@
 .right {
     transform: translateX(100%);
 }
+
+@media screen and (max-width: 1024px) {
+    .decor-text {
+        display: none;
+    } 
+}
