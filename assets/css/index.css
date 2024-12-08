@@ -83,7 +83,7 @@ body {
   justify-content: space-around;
 }
 
-.section_1-chillguy {
+/* .section_1-chillguy {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,7 +97,25 @@ body {
 
 .section_1-chillguy h1 {
   color: #333;
+} */
+
+.section_1-chillguy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: auto;
+  position: relative;
 }
+
+.section_1-chillguy img {
+  animation: bounce 3s ease-in-out infinite;
+}
+
+.section_1-chillguy h1 {
+  color: #333;
+}
+
 
 
 .section_1-form {
@@ -226,6 +244,7 @@ body {
 
 .section_1-form .warning-text {
   font-family: sans-serif;
+  text-align: center;
   color: #E6A828;
 }
 
