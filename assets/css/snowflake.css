@@ -1,0 +1,29 @@
+#snow-container {
+    position: fixed; /* Luôn cố định trong màn hình */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Cho phép người dùng tương tác với nội dung phía sau */
+    z-index: 9999; /* Đảm bảo tuyết ở trên cùng */
+}
+
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    background-color: white;
+    border-radius: 50%;
+    filter: blur(3px);
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
