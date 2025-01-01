@@ -5,17 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32"
       href="assets/imgs/logo-transparent.png">
+    <link rel="stylesheet" href="assets/css/loader.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/decor.css">
-    <link rel="stylesheet" href="assets/css/snowflake.css">
+    <!-- <link rel="stylesheet" href="assets/css/snowflake.css"> -->
     <link rel="stylesheet" href="assets/css/tablet.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Chill Guy Chirstmast</title>
   </head>
   <body>
+    <div id="overlay-spinner" class="overlay-loader hidden-loader">
+      <span class="loader"></span>
+    </div>
+
     <div id="snow-container"></div>
     <div class="main-container">
-      <img class="light-bubl" src="assets/imgs/light_bulb.png" alt>
+      <!-- <img class="light-bubl" src="assets/imgs/light_bulb.png" alt> -->
       <div class="menu-icon" id="menu-icon">
         <img src="assets/svgs/menu-hamburger-nav-svgrepo-com.svg" alt="Menu">
       </div>
@@ -36,13 +43,13 @@
       </div>
       <div class="overlay" id="overlay"></div>
       <div class="section_1">
-        <p class="decor-text">CHILL GUY CHRISTMAS</p>
+        <!-- <p class="decor-text">CHILL GUY CHRISTMAS</p> -->
         <div class="section_1-chillguy left hidden">
-          <img src="assets/imgs/chill_guy_xmas-removebg-preview.png" alt>
+          <img src="assets/imgs/10k.png" alt>
           <h1>Chill Guy Christmas</h1>
         </div>
 
-        <!-- <div class="section_1-form right hidden">
+        <div class="section_1-form right hidden">
           <div class="title"><img src="assets/imgs/logo-transparent.png"
               alt></div>
           <div class="countdown">
@@ -66,11 +73,15 @@
             </div>
           </div>
           <button class="increase">UNTIL PRICE INCREASE</button>
-          <p>Your Purchase: 0 CGC</p>
+          <p id="status" class="status"></p>
           <div class="break-line"></div>
+          <span class="address-wallet"></span>
           <label for="pay-mount">BNB You Pay</label>
-          <input name="pay-mount" type="text">
-          <button class="connect-wallet">Connect Wallet</button>
+          <input id="amount" name="pay-mount" type="text">
+          <p id="receive-value"></p>
+          <button id="open-wallet-modal" class="connect-wallet">Connect
+            Wallet</button>
+          <button id="buy-cgc" class="connect-wallet">Buy CGC</button>
           <p class="warning-text">
             Some Crypto.com wallets are facing issues purchasing tokens. To
             ensure participation, please send BNB directly to:➡️
@@ -81,10 +92,11 @@
           <h3>Referral Rewards</h3>
           <label for="BEP20-address">Your BEP20 Address</label>
           <input name="BEP20-address" type="text">
-          <button class="connect-wallet">Get Referral Link</button>
+          <button id="Referral-link" class="connect-wallet">Get Referral
+            Link</button>
           <p style="color: #888;">Enjoy 10% of purchased tokens</p>
-        </div> -->
-        <img class="form-tree" src="assets/imgs/tree.png">
+        </div>
+        <!-- <img class="form-tree" src="assets/imgs/tree.png"> -->
       </div>
       <div id="section_2" class="section_2">
         <div class="section_2-left left hidden">
@@ -129,7 +141,7 @@
         <div class="section-4_first_left left hidden">
           <img src="assets/imgs/chill_guy_drink_coffe.png">
         </div>
-        <!-- <div class="section-4_first_right right hidden">
+        <div class="section-4_first_right right hidden">
           <h1 class="title">Xmasguy Pre-sale</h1>
           <p>Get your tokens now and before launching on dexscreener. This won´t
             be a regret but life changing opportunity.
@@ -142,7 +154,7 @@
           <p>We are sold out! Check our telegram or X for specific info about
             drop date and time!
           </p>
-        </div> -->
+        </div>
       </div>
 
       <div id="section_5" class="section_5 left hidden">
@@ -165,19 +177,23 @@
       <div id="control-btn">
         <img id="icon-sound" src="assets/svgs/sound-volume-2-svgrepo-com.svg">
       </div>
-      <audio id="background-music" autoplay loop>
+      <!-- <audio id="background-music" autoplay loop>
         <source src="assets/musics/calm-christmas-piano-262888.mp3"
           type="audio/mpeg">
-      </audio>
+      </audio> -->
+
     </div>
-    <img class="footer-image" src="assets/imgs/Footer Bottom.png" alt>
+    <!-- <img class="footer-image" src="assets/imgs/Footer Bottom.png" alt> -->
     <script src="assets/js/index.js"></script>
+    <script src="assets/js/wallet-utils.js"></script>
     <script src="assets/js/slider.js"></script>
     <script src="assets/js/stickybar.js"></script>
-    <script src="assets/js/snowflake.js"></script>
+    <!-- <script src="assets/js/snowflake.js"></script> -->
     <script src="assets/js/card-hover.js"></script>
     <script src="assets/js/sidebar.js"></script>
-    <!-- <script src="assets/js/countdown.js"></script> -->
+    <script src="assets/js/countdown.js"></script>
     <script src="assets/js/music_control.js"></script>
   </body>
 </html>
+
+<!-- select 50, 100 ,150 / hiển thị số CGC có thể đổi được khi input/ thêm loading -->
